@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useUserContext } from "../../Contexts/UserContext";
-import styles from "./Switch.module.css"; // Import the CSS module
+import styles from "./switch.module.css"; // Import the CSS module
 import { api, fetchUserData } from "../../api/api";
 
 const Switch = () => {
