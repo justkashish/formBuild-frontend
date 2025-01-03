@@ -5,7 +5,7 @@
 }
 
 .userName {
-    color: #FFA400;
+    color: green;
     font-weight: 700;
     font-size: 1.5rem;
 }
@@ -137,13 +137,13 @@
 .svgRight {
     height: auto;
     position: absolute;
-    right: 0;
+    right: 2%;
 }
 
 .createBotButton {
     border: none;
     background-color: #1a5fff;
-    width: 292px;
+    width: 280px;
     aspect-ratio: 4.56;
     border-radius: 6px;
     color: white;
@@ -170,7 +170,7 @@
 }
 
 .landingpageBanner {
-    width: 83.33%;
+    width: 84.33%;
     height: auto;
 }
 
@@ -213,15 +213,15 @@
 
 .footerContent ul li {
     text-decoration: underline;
-    line-height: 24px;
+    line-height: 26px;
     display: flex;
     gap: 6px;
     align-items: center;
 }
 
 .footerContent .link {
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
 }
 
 .footerContent h1 {

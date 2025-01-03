@@ -69,6 +69,7 @@
     justify-content: flex-start;
     height: 100px;
     margin-left: 67px;
+    cursor: pointer;
 }
 
 .mainBody {
@@ -174,4 +175,8 @@
 
 .error {
     color: red;
+}
+
+.icon {
+    cursor: pointer;
 }

@@ -27,7 +27,7 @@ const FormBot = () => {
   const [hasSentRatingInput, setHasSentRatingInput] = useState(false);
   const [isInputDisabled, setIsInputDisabled] = useState(false);
   const [inputPlaceholder, setInputPlaceholder] = useState(
-    "Type your message..."
+    "Type your message.."
   );
   const [isSubmitButton, setIsSubmitButton] = useState(false);
   const [inputType, setInputType] = useState("text"); // Determines the input type
@@ -138,7 +138,7 @@ const FormBot = () => {
                 setMessages((prev) => [...prev, { type: "bot", content: " " }]);
                 setHasSentTextInput(true);
                 setIsInputDisabled(false);
-                setInputPlaceholder("Please enter your response...");
+                setInputPlaceholder("Please enter your response.");
             }
             break; // Do not increment index automatically
         case "Date":
@@ -172,7 +172,7 @@ const FormBot = () => {
             break; // Do not increment index automatically
         case "Number":
             setInputType("number");
-            setInputPlaceholder("Please enter a number...");
+            setInputPlaceholder("Please enter a number.");
             setMessages((prev) => [
                 ...prev,
                 { ...newMessage, content: "Please enter a number." },
@@ -181,7 +181,7 @@ const FormBot = () => {
             break; // Do not increment index automatically
         case "Email":
             setInputType("email");
-            setInputPlaceholder("Please enter your email...");
+            setInputPlaceholder("Please enter your email.");
             setMessages((prev) => [
                 ...prev,
                 { ...newMessage, content: "Please enter your email." },
@@ -190,7 +190,7 @@ const FormBot = () => {
             break; // Do not increment index automatically
         case "Phone":
             setInputType("phone");
-            setInputPlaceholder("Please enter your phone number...");
+            setInputPlaceholder("Please enter your phone number.");
             setMessages((prev) => [
                 ...prev,
                 { ...newMessage, content: "Please enter your phone number." },
@@ -200,7 +200,7 @@ const FormBot = () => {
         case "Button":
             setMessages((prev) => [
                 ...prev,
-                { ...newMessage, content: "Please press the Submit Button" },
+                { ...newMessage, content: "Press the Submit Button!" },
             ]);
             setHasSentTextInput(false);
             setInputPlaceholder("");
@@ -384,7 +384,7 @@ const FormBot = () => {
         console.log("Responses submitted successfully", response);
         setIsLoading(false);
         updateAnalytics("completed");
-        navigate("/thankyou");
+        navigate("/submit");
       })
       .catch((error) => {
         console.error("Error submitting responses", error);
@@ -501,7 +501,7 @@ const FormBot = () => {
             className={`${styles.submitButton} ${styles.final}`}
           >
             {isLoading ? (
-              <ClipLoader color="white" size={25} />
+              <ClipLoader color="white" size={20} />
             ) : (
               "Submit"
             )}

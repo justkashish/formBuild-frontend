@@ -32,7 +32,7 @@
       text-align: center;
       font-size: 1.4rem;
       font-weight: 400;
-      color: #A5BF13;
+      color: aquamarine;
       margin-top: 13px;
       margin-bottom: 13px;
   }
@@ -49,18 +49,18 @@
   .behindContainer .leftImage {
       position: absolute;
       left: 44px;
-      top: 278px;
+      top: 230px;
   }
   
   .behindContainer .rightImage {
       position: absolute;
       right: 0px;
-      top: 178px;
+      top: 120px;
   }
   
   .behindContainer .bottomImage {
       position: absolute;
-      right: 334px;
+      right: 350px;
       bottom: 0px;
   }
   
@@ -116,7 +116,7 @@
   .userNameForm input {
       color: #c4c4c4;
       background-color: transparent;
-      border-radius: 12px;
+      border-radius: 6px;
       border: 1px solid #ffffff50;
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
       width: 100%;
@@ -129,7 +129,7 @@
   .passwordForm input:focus,
   .userNameForm input:focus {
       outline: none;
-      border: 1px solid #1a5fff;
+      border: 1px solid black;
       transform: scale(1.06);
   }
   
@@ -137,29 +137,29 @@
       width: 100%;
       aspect-ratio: 7.63;
       background-color: #1a5fff;
-      box-shadow: 0px 4px 10px rgba(233, 68, 75, 0.25);
-      border-radius: 12px;
+      box-shadow: 0px 4px 10px 0px #E9444B40;
+      border-radius: 6px;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.4rem;
+      font-size: 1.5rem;
       font-weight: 500;
       margin: 13px 0px;
       color: white;
       position: relative;
       border: none;
-      transition: box-shadow 150ms ease-in-out, transform 150ms ease-in-out;
+      /* transition: box-shadow 150ms ease-in-out, transform 150ms ease-in-out; */
   }
   /* Active (pressed-down) state */
   
   .loginButton:active {
-      box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.2), inset -2px -2px 4px rgba(255, 255, 255, 0.2);
-      transform: scale(0.98);
+      /* box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.2), inset -2px -2px 4px rgba(255, 255, 255, 0.2); */
+      /* transform: scale(0.98); */
       font-weight: 700;
   }
   
   .loginButton:hover {
-      filter: brightness(1.2);
+      /* filter: brightness(1.2); */
       cursor: pointer;
       font-weight: 700;
   }
@@ -190,13 +190,10 @@
   .signUpText a {
       color: #1a5fff;
       text-decoration: none;
-      transform: 150ms ease-in-out;
   }
   
   .signUpText a:hover {
       cursor: pointer;
-      filter: brightness(0.8);
-      transform: scale(1.05);
   }
   
   @media screen and (max-width: 1080px) {
@@ -249,6 +246,4 @@
   
   .errorField input:focus {
       outline: none;
-      box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
-      /* Optional: Red shadow on focus */
   }

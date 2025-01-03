@@ -16,7 +16,7 @@ const ShareModal = ({ isOpen, onClose }) => {
   const handleShare = async () => {
     try {
       if (!email) {
-        alert("Please enter a valid email.");
+        alert("Please enter valid email.");
         return;
       }
  
@@ -28,7 +28,7 @@ const ShareModal = ({ isOpen, onClose }) => {
         }
       );
       console.log("API Response:", response.data);
-      alert("Invite sent successfully!");
+      alert("Invite successfully sent!");
       onClose(); // Close modal after successful API call.
     } catch (error) {
       console.error("Error sharing workspace:", error);

@@ -7,6 +7,7 @@ import { api } from "../../api/api";
 import { fetchUserData } from "../../api/api";
 import PropTypes from "prop-types"; // Import PropTypes for validation
 import ClipLoader from "react-spinners/ClipLoader";
+import { IoMdArrowBack, IoMdBackspace } from "react-icons/io";
 const Settings = ({ setIsSettingsOpen }) => {
   useAuth();
   const navigate = useNavigate();
@@ -183,16 +184,20 @@ const Settings = ({ setIsSettingsOpen }) => {
   };
   return (
     <section className={styles.settings}>
+      <span style={{position:"fixed",left:"3%",top:"3%" , cursor:"pointer"}}><IoMdArrowBack  size={35}
+          onClick={() => setIsSettingsOpen(false)}/></span>
+      
       <div className={styles.header}>
-        <img
+        {/* <img
           src={
             theme === "dark"
               ? "https://res.cloudinary.com/dtu64orvo/image/upload/v1734695297/arrow_back_wzcjzz.png"
               : "https://res.cloudinary.com/dtu64orvo/image/upload/v1735307971/icons8-left-arrow-50_cswfbm.png"
           }
-          alt="back arrow"
+          alt="back arrow" className="back-arrow"
           onClick={() => setIsSettingsOpen(false)}
-        />
+        /> */}
+        
         <h1>Settings</h1>
       </div>
       <div className={styles.mainBody}>
@@ -289,7 +294,7 @@ const Settings = ({ setIsSettingsOpen }) => {
             onClick={handleUpdate}
           >
             {isLoading ? (
-              <ClipLoader color="white" size={25} />
+              <ClipLoader color="white" size={20} />
             ) : (
               "Update"
             )}

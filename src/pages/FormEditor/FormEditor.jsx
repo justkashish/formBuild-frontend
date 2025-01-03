@@ -51,10 +51,10 @@ const FormEditor = () => {
   });
 
   const inputTexts = {
-    TextInput: "Hint : User will input a text on his form",
-    Number: "Hint : User will input a number on his form",
-    Email: "Hint : User will input a email on his form",
-    Phone: "Hint : User will input a phone on his form",
+    TextInput: "Hint : User will input text on form",
+    Number: "Hint : User will input number on form",
+    Email: "Hint : User will input email on form",
+    Phone: "Hint : User will input phone on form",
     Date: "Hint : User will select a date",
     Rating: "Hint : User will tap to rate out of 5",
   };
@@ -649,7 +649,7 @@ const FormEditor = () => {
       </main>
       {isSaveModalOpen && (
         <div className={styles.saveModal} ref={saveModalRef}>
-          <h1>Saved Successfully</h1>
+          <h1>Saved Successfully!! </h1>
         </div>
       )}
     </section>

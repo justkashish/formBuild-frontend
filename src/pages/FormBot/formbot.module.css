@@ -17,12 +17,12 @@
 }
 
 .botMessage {
-    background-color: rgb(249, 250, 251);
-    color: #181818;
+    background-color: RGB(2, 64, 130);
+    color: white;
     padding: 10px;
     margin: 5px 0;
-    border-radius: 10px;
-    max-width: 70%;
+    border-radius: 16px;
+    max-width: 80%;
     align-self: flex-start;
     box-shadow: (0, 0, 0, 0.3) 0px 1px 2px;
     font-family: "Open Sans", sans-serif;
@@ -31,11 +31,11 @@
 }
 
 .userMessage {
-    background-color: #ff8e21;
-    color: white;
+    background-color: RGB(116, 188, 244);
+    color: #181818;
     padding: 10px;
     margin: 5px 0;
-    border-radius: 10px;
+    border-radius: 16px;
     max-width: 70%;
     align-self: flex-end;
     box-shadow: (0, 0, 0, 0.3) 0px 1px 2px;
@@ -78,7 +78,7 @@
     align-items: center;
     padding-left: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 6px;
     height: 50px;
     width: 300px;
 }
@@ -106,12 +106,12 @@
 
 .submitButton,
 .confirmButton {
-    background-color: #053ec4;
+    background-color: #1e5ff9;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transform: 150ms ease-in-out;
+    /* transform: 150ms ease-in-out; */
     height: 50px;
     width: 50px;
     display: flex;
@@ -121,7 +121,7 @@
 
 .submitButton:hover,
 .confirmButton:hover {
-    transform: scale(1.1);
+    transform: scale(0.9);
 }
 
 .submitButtonContainer {

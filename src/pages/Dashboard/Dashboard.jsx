@@ -72,7 +72,7 @@ const Dashboard = () => {
     console.log(selectedWorkspace);
   }, [selectedWorkspace]);
   /**
-   * Toggles the visibility of the dropdown menu
+   * Toggles visibility of dropdown menu
    */
 
   const handleWorkspaceClick = async (workspaceId) => {
@@ -85,7 +85,7 @@ const Dashboard = () => {
           "selectedWorkspace",
           JSON.stringify(workspaceData)
         );
-        // Reorder the workspaces array
+        // Reorder workspaces array
         const reorderedWorkspaces = workspaces.filter(
           (id) => id !== workspaceId
         );
@@ -496,6 +496,8 @@ const Dashboard = () => {
             </div>
           </div>
 
+
+
           {/* Folder Modal */}
           {isFolderModalOpen && (
             <div className={styles.Modal}>
@@ -552,6 +554,8 @@ const Dashboard = () => {
               </div>
             </div>
           )}
+
+
           {/* Form Modal */}
           {isFormModalOpen && (
             <div className={styles.Modal}>
@@ -586,6 +590,8 @@ const Dashboard = () => {
               </div>
             </div>
           )}
+
+
 
           {/* Form Delete Confirmation Modal */}
           {isFormDeleteModalOpen && (
