@@ -165,7 +165,7 @@
     border-radius: 6px;
     color: white;
     display: flex;
-    background-color: var(--button-background);
+    /* background-color: var(--button-background); */
     /* Use variable */
     align-items: center;
     justify-content: center;

@@ -34,8 +34,8 @@ function App() {
           setIsLoading(false);
         }
       } catch (error) {
-        console.log("Backend waking up...");
-        console.error("Error checking backend health:", error);
+        console.log("Checking Backend");
+        console.error("Error check backend health:", error);
         setTimeout(checkBackend, 2000); // Retry every 2 seconds
       }
     };
